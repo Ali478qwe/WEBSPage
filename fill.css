@@ -1,0 +1,283 @@
+
+
+@import "tailwindcss";
+body {
+  margin: 0;
+  
+}
+hr {
+  border: none;
+  border-radius: 20px;
+  height: 2px;
+  width: 75vh;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(255, 255, 255) 2px 2px 10px;
+}
+#start {
+  
+  background-image: url("../img/stars.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: blanchedalmond;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+#menu {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 10vh;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-image: url("back.jpg");
+  padding: 1vh;
+  
+}
+main {
+  width: 100vw;
+  height: max-content;
+  display: flex;
+  justify-content: flex-end;
+  gap: 5vw;
+}
+#text {
+  height: 45vh;
+  width: 30vw;
+  margin-top: 4vw;
+  margin-right: 10vw;
+}
+#text > p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#sign {
+  margin: 5vh auto;
+  width: 30vw;
+  height: 70vh;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(255, 255, 255) 0px 0px 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#form {
+  height: inherit;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+#filde-name {
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto;
+  align-items: center;
+  gap: 10px;
+}
+#filde-name > label {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+button {
+  height: 20px;
+  width: 30px;
+}
+input {
+  background-color: rgba(214, 214, 214, 0.397);
+  height: 5vh;
+  width: 20vw;
+  border: none;
+  border-bottom: 2px solid rgb(143, 143, 143);
+  outline: none;
+  box-sizing: border-box;
+  padding: 0 10px;
+  box-shadow: 0 8px 12px black;
+}
+input:focus {
+  border-color: blue;
+  box-shadow: 0 8px 12px blue;
+}
+input:hover:not(:focus) {
+  border-left: 2px solid blue;
+}
+button {
+  color: rgb(0, 0, 0);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: larger;
+  font-weight: bold;
+  height: 30px;
+  width: 50px;
+  background-color: rgb(235, 235, 235);
+  border: none;
+  border-bottom: 2px solid gray;
+  margin: auto 20px;
+}
+button:hover {
+  color: rgb(0, 255, 0);
+  border-color: rgb(0, 255, 0);
+  box-shadow: 0 0 5px rgb(0, 255, 0);
+}
+button[id="clr"]:hover {
+  color: rgb(255, 0, 0);
+  border-color: rgb(255, 0, 0);
+  box-shadow: 0 0 5px rgb(255, 0, 0);
+}
+#mb > p {
+  color: rgb(0, 153, 255);
+  font-size: small;
+
+  text-align: center;
+  margin: 40px auto;
+}
+#profile {
+  visibility: hidden;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+  position: absolute;
+  background-color: white;
+  height: 100vh;
+  width: 20vw;
+  left: 0;
+  display: grid;
+  grid-template-areas:
+    "head head"
+    "menu option"
+    "footer footer";
+  grid-template-columns: 5fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr;
+  
+}
+#profile > div.one {
+  grid-area: head;
+  background-color: rgb(230, 230, 230);
+  border-bottom: 0.5px solid rgb(26, 0, 99);
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  color: black;
+}
+#profile > div.two {
+  grid-area: option;
+  background-color: rgb(252, 0, 0);
+}
+#profile > div.three {
+  grid-area: footer;
+  background-color: rgb(252, 214, 0);
+}
+#pic {
+  margin: 10px 10px;
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  background-color: blueviolet;
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: rgb(1, 3, 37) 0 8px 12px;
+  
+}
+#info > div > h2{
+  height: 25px;
+  width: 138px;
+  overflow: hidden;
+  white-space:nowrap;
+  text-overflow:clip;
+}
+#close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  transform-origin: center;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  font-size: xx-large;
+  margin: 15px 15px;
+  position:absolute;
+  right: 0;
+  cursor: pointer;
+  animation: rotate 2s ;
+  
+}
+#info{
+    display: flex;
+    flex-direction: row;
+    position:absolute;
+    align-items: center;
+}
+#mode{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  transform-origin: center;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  font-size: large;
+  margin: 45px 15px;
+  position:absolute;
+  right: 0; 
+}
+#continu{
+  height: 100vh;
+  width: 100vw;
+}
+.continer{
+  
+  height: 30vh;
+  width: 100vw;
+  overflow-x:auto;
+  overflow-y: hidden;
+  background-color: rgb(255, 145, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+ gap: 50px;
+
+ 
+}
+.continer > div{
+  flex-shrink: 0;
+  height: 25vh;
+  width: 25vw;
+  background-color: rgb(0, 102, 255);
+  border: none;
+  border-bottom: 2px solid white;
+  border-radius: 20px;
+  box-shadow: 0px 15px 20px black;
+  
+}
+.flexbar{
+  transition: transform 0.3s ease;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg) scale(1) ;
+        background-color: blue;
+    }
+    60%{
+        transform: rotate(180deg) scale(1.5) ;
+        color: blue;
+    }
+    100%{
+        transform: rotate(360deg) scale(1) ;
+    }
+}
+@keyframes scroll-left {
+  0%{
+     transform: translateX(100%);
+  }
+  
+  
+  100%{
+    transform: translateX(-100%);
+  }
+  
+}
